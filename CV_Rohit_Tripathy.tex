@@ -1,48 +1,54 @@
 % Preamble 
-\documentclass[11pt]{article}
+\documentclass[11pt, line, margin]{res}
 
 %Add packages here 
 \usepackage{hyperref} %This is for adding a hyperlink to the email address
 
 % Set margins / dimensions 
-\topmargin = 0.0in
-\oddsidemargin = 0.0in
-\evensidemargin = 0.0in
-\textwidth = 6.5in
-\headheight = 0pt
-\headsep = 0pt
-\textheight = 9.0in
+%\topmargin = 0.0in
+%\oddsidemargin = 0.0in
+%\evensidemargin = 0.0in
+%\textwidth = 6.5in
+%\headheight = 0pt
+%\headsep = 0pt
+%\textheight = 9.0in
 
 % Begin the document 
-\begin{document}
-
 %Heading
 %includes Name, address, phone number and email address
-\centerline{\LARGE \textbf{Rohit Tripathy}}
-\centerline{Apt.\#2, 225 South River Road, West Lafayette, IN-47906, USA}
-\centerline{\textbf{Phone:}+1-(765)-476-6988}
-\centerline{\textbf{Email}: \href{mailto:rtripath@purdue.edu}{rtripath@purdue.edu}}
+\begin{document}
+\name{\centerline{\LARGE Rohit Tripathy}}
+\address{Apt.\#2, 225 South River Road, West Lafayette, IN-47906, USA}
 
-%seperate heading with a horizontal line
-\line(1, 0){470}
+%begin the actual content 
+\begin{resume}
 
-%Now start putting sections here 
-
-%Summary section ; get this from LinkedIn
-\section*{Summary}
+%Put different sections 
+\section{\Large Summary}
 I am a graduate student at the \textit{\textbf{Predictive Science Lab}} at \textbf{Purdue University}. My research deals with high dimensional Uncertainty Quantification. Learning high dimensional functions is a problem of massive importance in various areas of engineering (flow in porous media, contact mechanics in granular crystals, molecular dynamics, for instance). At the same time, it is a computationally intensive problem and the computational cost rises exponentially with an increase in the number of dimensions (\textit{curse of dimensionality}). We seek to devise probabilistic surrogate models based on Bayesian principles that reduce the computational expense of learning these high dimensional mappings and quantifies model-form uncertainties. In order to do so, we utilize \textit{Gaussian Processes (GP)}, a non-parametric kernel based regression methodology. We also seek to understand how the model form uncertainty propagates through the model (\textit{Uncertainty Propagation} problem).
 
 %Education section
-\section*{Education}
+\section{\Large Education}
+\begin{itemize}
+\item Master of Science(MS) in Mechanical Engineering(August 2014 - Current) \\ Purdue University, West Lafayette, IN \\ Current G.P.A.: 3.4 \\ Expected graduation: May 2016
+\item Bachelor of Technology(B. Tech.) in Mechanical Engineering(July 2010 - May 2014) \\ VIT University, Vellore, TN(India) \\ G.P.A.: 9.02
+\end{itemize}
 
+\section{\Large Work\ Experience}
+\begin{itemize}
+\item \textit{Scooters India Ltd.} \hfill December 2012 \\ Worked on a project entitled "Complete Manufacturing and Assembly of a reverse gear sprocket". This project involved studying various stages involved in the manufacturing of a reverse gear sprocket and its eventual assembly into a typical Indian 3 wheeler auto-rickshaw.
+\item \textit{Hindustan Aeronautics Limited} \hfill May 2012 - June 2012 \\ As a vocational trainee at HAL's \textit{Transport Aircraft Division} in Kanpur(India), I was given a hands on experience in the operations of various departments within the factory including the Dornier shop , the loom shop , the hydraulics shop , the machining lab , the sheet metal and production lab , the CAD/CAM lab and the hydraulics and rotatables lab.
+\end{itemize}
 
-\section*{Work Experience}
-
-\section*{Technical Interests}
-\section*{Skills}
-\section*{Publications}
-\section*{Projects}
-\section*{Courses}
-\section*{Volunteering}
+\end{resume}
 \end{document}
 
+\section{\Large Technical\ Interests}
+\section{\Large Skills}
+\section{\Large Publications}
+\section{\Large Projects}
+\section{\Large Courses}
+\section{\Large Volunteering}
+
+
+ \\ \textbf{Phone:}+1-(765)-476-6988 \\ \textbf{Email}: \href{mailto:rtripath@purdue.edu}{rtripath@purdue.edu}; \href{mailto:rohitkt10@gmail.com}{rohitkt10@gmail.com}
