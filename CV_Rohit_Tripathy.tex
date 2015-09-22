@@ -1,64 +1,147 @@
-% Preamble 
-\documentclass[11pt, line, margin]{res}
+\documentclass[margin,line,a4paper]{resume}
 
-%Add packages here 
-\usepackage{hyperref} %This is for adding a hyperlink to the email address
+\usepackage[latin1]{inputenc} %utf8
+\usepackage[english,danish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,wrapfig}
+\usepackage{url}
+\usepackage[colorlinks=true, a4paper=true, pdfstartview=FitV,
+linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+\pdfcompresslevel=9
 
-% Set margins / dimensions 
-%\topmargin = 0.0in
-%\oddsidemargin = 0.0in
-%\evensidemargin = 0.0in
-%\textwidth = 6.5in
-%\headheight = 0pt
-%\headsep = 0pt
-%\textheight = 9.0in
 
-% Begin the document 
-%Heading
-%includes Name, address, phone number and email address
 \begin{document}
-\name{\centerline{\LARGE Rohit Tripathy}}
-\address{Apt.\#2, 225 South River Road, West Lafayette, IN-47906, USA}
 
-%begin the actual content 
+%%%%% HEADING 
+{\sc \Large Curriculum Vitae -- Rohit K. Tripathy}
 \begin{resume}
+    \vspace{0.5cm}
 
-%Put different sections 
-\section{\Large Summary}
-I am a graduate student at the \textit{\textbf{Predictive Science Lab}} at \textbf{Purdue University}. My research deals with high dimensional Uncertainty Quantification. Learning high dimensional functions is a problem of massive importance in various areas of engineering (flow in porous media, contact mechanics in granular crystals, molecular dynamics, for instance). At the same time, it is a computationally intensive problem and the computational cost rises exponentially with an increase in the number of dimensions (\textit{curse of dimensionality}). We seek to devise probabilistic surrogate models based on Bayesian principles that reduce the computational expense of learning these high dimensional mappings and quantifies model-form uncertainties. In order to do so, we utilize \textit{Gaussian Processes (GP)}, a non-parametric kernel based regression methodology. We also seek to understand how the model form uncertainty propagates through the model (\textit{Uncertainty Propagation} problem).
 
-%Education section
-\section{\Large Education}
+
+
+%%%%%% PERSONAL INFO
+    \section{\mysidestyle Personal\\Information}%\vspace{2mm}
+    Rohit K. Tripathy \\
+    Apt. \#534  \\ 
+    272 Littleton Street \\ 
+    West Lafayette, IN 47906 \\
+    USA \\ 
+    tel: +1-765-476-6988 \\
+    email:\href{mailto:rtripath@purdue.edu}{rtripath@purdue.edu}, \href{mailto:rohitkt10@gmail.com}{rohitkt10@gmail.com} \\
+    
+
+
+
+%%%%%%% SUMMARY
+    \section{\mysidestyle Summary}
+    I am a graduate student in the School of Mechanical Engineering at Purdue University, West Lafayette, USA. I work at the Predictive Science Lab under the supervision of Prof. Ilias Bilionis. My research area is high dimensional Bayesian uncertainty quantification. I am currently a thesis option Masters student and expect to graduate in December 2015. I will begin my PhD with Prof. Bilionis starting January 2016.
+
+
+
+%%%%%%% EDUCATION
+    \section{\mysidestyle Education} \textbf{MS in Mechanical Engineering from
+    Purdue University} (\textit{August} 2014-\textit{December} 2015(\emph{expected})). \\
+    \textit{Thesis advisor}: Prof. Ilias Bilionis. \\
+    \textit{Thesis title}: Gaussian processes with built-in dimensionality reduction: Applications in high-dimensional uncertainty quantification. \\
+    \textit{Courses}: Advanced Thermodynamics(\textit{ME500}),  Intermediate Fluid Mechanics(\textit{ME509}),  Numerical Methods in Mechanical Engineering(\textit{ME581}),  Finite Element and Boundary Element Methods(\textit{ME681}),  Computational Fluid Dynamics(\textit{ME614}),  Applied Decision Theory and Bayesian Statistics(\textit{STAT529}),  Advanced Math for Physicists and Engineers I(\textit{MA527}),  Atomistic view of Materials: Modeling and Simulation(\textit{MSE697})
+
+    \textbf{B. Tech. in Mechanical Engineering from VIT University, Vellore, India}
+    (\textit{July} 2010-\textit{May} 2014). \\
+    \textit{Thesis advisor}: Prof. Thundil Karuppa Raj. \\
+    \textit{Thesis title}: A Numerical Investigation of the Performance of an Earth-Air Heat Exchanger System.
+
+
+
+
+%%%%%%% RESEARCH INTERESTS
+\section{\mysidestyle Research Interests}
+Uncertainty Quantification, Probabilistic Numerical Methods, Bayesian Statistics, Machine Learning, Molecular Dynamics, Atomistic Simulations.
+
+
+
+
+%%%%%%% RESEARCH EXPERIENCE
+\section{\mysidestyle Research Experience}
+\begin{description}
+\item[\textit{September} 2014 - Present$\rightarrow$] Graduate Research Assistant, Purdue University, West Lafayette
 \begin{itemize}
-\item Master of Science(MS) in Mechanical Engineering(August 2014 - Current) \\ Purdue University, West Lafayette, IN \\ Current G.P.A.: 3.4 \\ Expected graduation: May 2016
-\item Bachelor of Technology(B. Tech.) in Mechanical Engineering(July 2010 - May 2014) \\ VIT University, Vellore, TN(India) \\ G.P.A.: 9.02
+\item Worked under the supervision of Prof. Ilias Bilionis at the Predictive Science Lab.
+\item Worked on developing a novel gradient-free approach to dimensionality reduction in high-dimensional physical responses that exhibit special structure called `active subspace'.
+\item Developed \texttt{Python} codes to implement and test the proposed methodology.
+\item Exhaustively validated the methodology with numerical examples as well as a physical example involving uncertainty propagation in a high dimensional granular crystals system.
+\end{itemize}
+\end{description}
+
+
+
+
+%%%%%%%CONFERENCE PUBS.
+\section{\mysidestyle Publications \\ (Conferences)}
+\begin{description}
+\item Gonzalez, M., Bilionis, I., Tripathy R., (2015). \textit{Uncertainty quantification in multi-dimensional granular crystals for robust performance}. ASM Applied Mechanics and Materials Conference, Seattle, WA, USA.
+\item Bilionis, I., Tripathy R., (2015). \textit{High-dimensional uncertainty propagation: A Bayesian approach using Gaussian processes with build-in dimensionality reduction}. ASME Verification and Validation Symposium, Las Vegas, NV, USA.
+\end{description}
+
+
+
+%%%%%%JOURNAL PUBS.
+\section{\mysidestyle Publications \\ (Journals)}
+\begin{description}
+\item R. Tripathy, S. Mishra, R. T. Karuppa Raj, ``\textit{A Numerical Investigation on the Performance of an Earth Air Heat Exchanger System for the Indian District of Nagpur}", Applied Mechanics and Materials, Vols. 592-594, pp. 1398-1402, Jul. 2014
+\end{description}
+
+
+
+
+%%%%%% TECHNICAL SKILLS
+\section{\mysidestyle Technical Skills}
+\begin{description}
+\item[Programming Skills] \texttt{Python}, \texttt{MATLAB}, \texttt{C}, \texttt{Java}
+\item[Version Control] git, subversion 
+\item[Commercial Engineering Software] Solidworks, ANSYS
+\item[Text editing] vim, \LaTeX
+\end{description}
+
+
+
+%%%%%%% MEMBERSHIPS
+\section{\mysidestyle Organizations / Professional Membership}
+\begin{itemize}
+\item Society of Industrial and Applied Mathematics - Student Member(\textit{August} 2015 - \textit{Present})
+\item Society of Industrial and Applied Mathematics(Purdue Chapter) 
+\item Purdue Graduate Student Government - Academic and Professional Development Committee(\textit{August 2014} - \textit{Present})
 \end{itemize}
 
-%Work ex. section
-\section{\Large Work\ Experience}
-\begin{itemize}
-\item \textit{Scooters India Ltd.} \hfill December 2012 \\ Worked on a project entitled "Complete Manufacturing and Assembly of a reverse gear sprocket". This project involved studying various stages involved in the manufacturing of a reverse gear sprocket and its eventual assembly into a typical Indian 3 wheeler auto-rickshaw.
-\item \textit{Hindustan Aeronautics Limited} \hfill May 2012 - June 2012 \\ As a vocational trainee at HAL's \textit{Transport Aircraft Division} in Kanpur(India), I was given a hands on experience in the operations of various departments within the factory including the Dornier shop , the loom shop , the hydraulics shop , the machining lab , the sheet metal and production lab , the CAD/CAM lab and the hydraulics and rotatables lab.
-\end{itemize}
 
-%Workshops attended 
-\section{Workshops attended}
-\begin{itemize}
-\item \textit{IMA Hot Topics Workshop - Uncertainty Quantification in Materials Modeling} \hfill July 28-31 2015 \\ Attended workshop sessions by various professional in academia and industry to learn basic methodologies within Uncertainty Quantification(UQ) such as Sensitivity Analysis, Generalized Polynomial Chaos, Gaussian Process Regression, Bayesian Global Optimization etc. Also developed an idea about the current state of the art within the field of UQ.  
-\end{itemize}
 
+%%%%%%% WORK EXP.
+\section{\mysidestyle Industrial Work experience}\vspace{1mm}
+\begin{description}
+   
+    \item[\textit{December} 2012$\rightarrow$ ] Trainee at Scooters India Limited in Lucknow, India. \\
+    Worked on a project entitled ``\textit{Complete Manufacturing and Assembly of a reverse gear sprocket}". This project involved studying various stages involved in the manufacturing of a reverse gear sprocket and its eventual assembly into a typical Indian 3 wheeler auto-rickshaw.    
+    
+    \item[\textit{June} 2012$\rightarrow$ ] Vocational Trainee at Hindustan Aeronautics Limited-Transport Aircraft Division in Kanpur, India. \\
+    As a vocational trainee at HAL's Transport Aircraft division in Kanpur, I was given a hands on experience in the operations of various departments within the factory including the Dornier shop, the loom shop, the hydraulics shop, the machining lab, the sheet metal and production lab, the CAD/CAM lab and the hydraulics and rotatables lab.
+    \end{description}
+
+
+
+%%%%%% LINKS 
+\section{\mysidestyle Online Links}
+\begin{description} 
+\item[LinkedIn $\rightarrow$]  \url{http://tinyurl.com/p4myxe8}
+\item[Bitbucket $\rightarrow$] \url{https://bitbucket.org/rohitkt10/}
+\item[GitHub $\rightarrow$] \url{https://github.com/rohitkt10/}
+\item[Predictive Science Lab $\rightarrow$] \url{http://www.predictivesciencelab.org/} 
+\end{description} 
 \end{resume}
 \end{document}
 
-%Skills section
-\section{\Large Skills}
-
-\section{\Large Technical\ Interests}
-
-\section{\Large Publications}
-\section{\Large Projects}
-\section{\Large Courses}
-\section{\Large Volunteering}
 
 
- \\ \textbf{Phone:}+1-(765)-476-6988 \\ \textbf{Email}: \href{mailto:rtripath@purdue.edu}{rtripath@purdue.edu}; \href{mailto:rohitkt10@gmail.com}{rohitkt10@gmail.com}
+
+
+
+\end{description}

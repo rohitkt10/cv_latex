@@ -2,12 +2,12 @@
 %    for LaTeX version 2.09
 % Copyright (C) 1988,1989 by Michael DeCorte
 
-\typeout{Document Style `res' <26 Sep 89>.}
+\typeout{Document Style `resume' <26 Sep 89, Dec 07>.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% res.sty
+% resume.sty
 %
-% \documentstyle{res}
+% \documentstyle{resume}
 %
 % Copyright (c) 1988 by Michael DeCorte
 % Permission to copy all or part of this work is granted, provided
@@ -180,7 +180,7 @@
 % write docs to tell people how to use this
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{res}[2000/05/19 v1.4b Resume class]
+\ProvidesClass{resume}[2000/05/19 v1.4b Resume class]
 
 %\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 %\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
@@ -772,12 +772,12 @@
 % with everything in the left of its column
 
 \@secpenalty = -500
-\topmargin 0pt
+\topmargin 4pt
 \headheight 0pt
 \headsep 0pt
-\textheight 9in
+\textheight 8in
 \parindent 0pt
-\topmargin 0in
+%\topmargin 0in
 \oddsidemargin 0pt
 \evensidemargin 0pt
 \marginparwidth 0pt
@@ -787,10 +787,11 @@
 \def\@listI{\leftmargin\leftmargini
 \topsep 0pt 
 \parskip 0pt
-\partopsep 2pt plus 2pt
+\partopsep 10pt plus 2pt
 \parsep 2pt plus 2pt
 \itemsep \parsep}
-
+\pdfpagewidth 8.5in
+\pdfpageheight 11in 
 \pagestyle{empty}  % don't want page numbers
 
 \begin{format}
@@ -800,3 +801,43 @@
 \end{format}
 
 \let\section\@@section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% @brief    LaTeX2e Resume Style Config
+% @url      http://linux.dsplabs.com.au/?p=54
+% @date     Decemebr 2007
+% @author   Kamil K Wojcicki
+% @info     This a fusion of resume template code by Chris Paciorek
+%           (url: http://www.biostat.harvard.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
+%           and res.cls class by Michael DeCorte.
+%           I have merged these for educational purposes only.
+
+%\oddsidemargin -5mm
+%\evensidemargin -5mm
+\textwidth=125mm
+\itemsep=0cm
+\parsep=0cm
+\topmargin 10mm
+\textheight 215mm
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0in}}}{\end{list}}
+
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.25in}}}{\end{list}}
+
+%\newcommand{\mysidestyle}{\footnotesize\sc}
+\newcommand{\mysidestyle}{\small\sc}
+\newcommand{\myheadingstyle}{\sl}
+\newcommand{\mysubheadingstyle}{\sl}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
